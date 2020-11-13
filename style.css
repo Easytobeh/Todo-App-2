@@ -1,0 +1,92 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#btn {
+  padding: 5px 5px;
+  margin-left: 10px;
+  font-size: larger;
+}
+
+#new-item {
+  padding: 5px 5px;
+  margin-right: 10px;
+  width: 300px;
+  font-size: larger;
+
+}
+
+
+.bg-image {
+  /* The image used */
+  background-image: url("bg-image.jpg");
+  
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  
+  height: 100%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Position text in the middle of the page/image */
+.container {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 50%;
+  padding: 20px;
+  text-align: center;
+}
+
+.todos {
+margin-top: 50px;
+}
+
+.todos li{
+  list-style: none;
+  text-align: left;
+  line-height: 30px;
+  border: solid 3px rgb(192, 176, 176);
+  margin: 10px 5px;
+  padding: 5px 5px;
+  
+}
+
+.done-btn {
+  color: rgb(158, 221, 64);
+  float: right;
+  margin-left: 5px;
+  margin-top: 5px;
+  background-color: Transparent;
+  border: none;             /* Your can add different style/properties of button Here*/
+  cursor:pointer; 
+  outline: none;
+}
+
+.dlt-btn {
+
+  color: red;
+  float: right;
+  margin-top: 5px;
+  padding-right: 5px;
+  background-color: Transparent;
+border: none;             /* Your can add different style/properties of button Here*/
+cursor:pointer; 
+outline: none;
+}

@@ -2,6 +2,7 @@ body, html {
   height: 100%;
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
+  font-size: larger;
   
 }
 
@@ -13,6 +14,9 @@ body, html {
   padding: 5px 5px;
   margin-left: 10px;
   font-size: larger;
+ border-radius: 15px;
+  margin-top: 20px;
+  font-family: 'Shadows Into Light Two', Arial, Helvetica, sans-serif;
 }
 
 #new-item {
@@ -20,6 +24,9 @@ body, html {
   margin-right: 10px;
   width: 300px;
   font-size: larger;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  font-family: 'Shadows Into Light Two', Arial, Helvetica, sans-serif;
 
 }
 
@@ -44,7 +51,7 @@ body, html {
   color: white;
   font-weight: bold;
   border: 3px solid #f1f1f1;
-  position: absolute;
+    position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -52,6 +59,7 @@ body, html {
   width: 50%;
   padding: 20px;
   text-align: center;
+  border-radius: 20px;
 }
 
 .todos {
@@ -63,8 +71,11 @@ margin-top: 50px;
   text-align: left;
   line-height: 30px;
   border: solid 3px rgb(192, 176, 176);
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
   margin: 10px 5px;
-  padding: 5px 5px;
+  padding: 10px 20px;
+  font-family: 'Economica', Arial, Helvetica, sans-serif;
   
 }
 
@@ -77,6 +88,8 @@ margin-top: 50px;
   border: none;             /* Your can add different style/properties of button Here*/
   cursor:pointer; 
   outline: none;
+  font-size: medium;
+  font-family: 'Economica', Arial, Helvetica, sans-serif;
 }
 
 .dlt-btn {
@@ -89,4 +102,6 @@ margin-top: 50px;
 border: none;             /* Your can add different style/properties of button Here*/
 cursor:pointer; 
 outline: none;
+font-size: medium;
+font-family: 'Economica', Arial, Helvetica, sans-serif;
 }

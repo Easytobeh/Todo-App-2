@@ -1,9 +1,9 @@
-body, html {
+body,
+html {
   height: 100%;
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   font-size: larger;
-  
 }
 
 * {
@@ -14,9 +14,9 @@ body, html {
   padding: 5px 5px;
   margin-left: 10px;
   font-size: larger;
- border-radius: 15px;
+  border-radius: 15px;
   margin-top: 20px;
-  font-family: 'Shadows Into Light Two', Arial, Helvetica, sans-serif;
+  font-family: "Shadows Into Light Two", Arial, Helvetica, sans-serif;
 }
 
 #new-item {
@@ -26,19 +26,22 @@ body, html {
   font-size: larger;
   border-top-left-radius: 15px;
   border-bottom-right-radius: 15px;
-  font-family: 'Shadows Into Light Two', Arial, Helvetica, sans-serif;
-
+  font-family: "Shadows Into Light Two", Arial, Helvetica, sans-serif;
 }
 
+#new-item:focus {
+  border-color: paleturquoise;
+  outline: none;
+}
 
 .bg-image {
   /* The image used */
   background-image: url("bg-image.jpg");
-  
+
   filter: blur(5px);
   -webkit-filter: blur(5px);
-  
-  height: 100%; 
+
+  height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -46,12 +49,12 @@ body, html {
 
 /* Position text in the middle of the page/image */
 .container {
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/opacity/see-through */
   color: white;
   font-weight: bold;
   border: 3px solid #f1f1f1;
-    position: absolute;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -63,10 +66,10 @@ body, html {
 }
 
 .todos {
-margin-top: 50px;
+  margin-top: 50px;
 }
 
-.todos li{
+.todos li {
   list-style: none;
   text-align: left;
   line-height: 30px;
@@ -75,8 +78,7 @@ margin-top: 50px;
   border-bottom-right-radius: 30px;
   margin: 10px 5px;
   padding: 10px 20px;
-  font-family: 'Economica', Arial, Helvetica, sans-serif;
-  
+  font-family: "Economica", Arial, Helvetica, sans-serif;
 }
 
 .done-btn {
@@ -85,23 +87,22 @@ margin-top: 50px;
   margin-left: 5px;
   margin-top: 5px;
   background-color: Transparent;
-  border: none;             /* Your can add different style/properties of button Here*/
-  cursor:pointer; 
+  border: none; /* Your can add different style/properties of button Here*/
+  cursor: pointer;
   outline: none;
   font-size: medium;
-  font-family: 'Economica', Arial, Helvetica, sans-serif;
+  font-family: "Economica", Arial, Helvetica, sans-serif;
 }
 
 .dlt-btn {
-
   color: red;
   float: right;
   margin-top: 5px;
   padding-right: 5px;
   background-color: Transparent;
-border: none;             /* Your can add different style/properties of button Here*/
-cursor:pointer; 
-outline: none;
-font-size: medium;
-font-family: 'Economica', Arial, Helvetica, sans-serif;
+  border: none; /* Your can add different style/properties of button Here*/
+  cursor: pointer;
+  outline: none;
+  font-size: medium;
+  font-family: "Economica", Arial, Helvetica, sans-serif;
 }

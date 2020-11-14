@@ -4,6 +4,10 @@ document.getElementById('btn').addEventListener('click', addNewItem);
 //Add event listener to all todo item
 let todos = document.querySelector('.todos');
 
+//handling saved data from storage
+todos.innerHTML = localStorage.getItem('todoList');
+
+
 todos.addEventListener('click', (event) => {
     //  console.log(event.target);
     // console.log(event.target.parentElement);
@@ -23,7 +27,9 @@ todos.addEventListener('click', (event) => {
         event.target.parentElement.style.textDecoration = 'none';
         event.target.innerHTML = 'Done';
     }
-
+   //Update local storage
+    localStorage.setItem('todoList', todos.innerHTML);
+    
 });
 
 
@@ -53,12 +59,13 @@ function addNewItem() {
 
         element.appendChild(del);
         newItem.appendChild(element);
-        //add listener to list again
-
-        //console.log(`New Item: ${newTodo}`);
 
         //clear input text area
         let reset = document.getElementById('new-item').value = '';
+
+        //Update storage
+        localStorage.setItem('todoList', todos.innerHTML);
     }
 
 }
+
